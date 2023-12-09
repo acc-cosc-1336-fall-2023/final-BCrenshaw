@@ -1,0 +1,52 @@
+QUESTION 2
+
+    >>> Problem:
+        Use classes for this question.
+        Publicly traded stock reports.
+
+    >>> Data:
+        Stock list
+            Symbol      Company Name
+            AAPL        Apple Inc
+            CAT         Caterpillar
+            EK          Eastman Kodak
+            GOOG        Google
+            MSFT        Microsoft
+
+    >>> Example:
+        Stock  Report
+            Company     Symbol    
+            Microsoft   MSFT      
+            Microsoft   MSFT       
+            Microsoft   MSFT       
+
+    >>> Create a stock_file.dat file with the following data:
+            AAPL        Apple Inc
+            CAT         Caterpillar
+            EK          Eastman Kodak
+            GOOG        Google
+            MSFT        Microsoft
+
+
+    >>> Implementation:
+            Create a Stock class with one constructor with symbol and company_name parameters, 
+            private attributes(variables) symbol and company_name, and public functions get_symbol 
+            and get_company_name.
+
+            Create a function get_stock_list that reads the stock_file.dat file into a dictionary of 
+            Stock classes and returns the dictionary.
+
+    >>> Tests:
+            No Test cases.
+
+    >>> Main:
+        1. The program continues until the user opts out.
+        2. Create a main function,
+            Call the get_stock_list and save the return value to a variable.
+        3. Create the following menu:
+            1- Display stock purchase history
+            2- Exit
+
+            Option 1 calls the stock_list function and displays the data from the dictionary
+            Option 2 exits the program
+   

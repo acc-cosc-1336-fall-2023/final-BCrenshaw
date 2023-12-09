@@ -1,0 +1,49 @@
+QUESTION 4
+
+    >>> Problem:
+        Given two strings s and t, t is a substring of s if t is contained as a contiguous collection 
+        of symbols in s (as a result, t must be no longer than s). The position of a symbol in a string 
+        is the total number of symbols found to its left, including itself (e.g., the positions of all 
+        occurrences of 'U' in "AUGCUUCAGAAAGGUCUUACG" are 2, 5, 6, 15, 17, and 18). The symbol at 
+        position i of s is denoted by s[i].
+
+        A substring of s can be represented as s[j:k], where j and k represent the starting and ending 
+        positions of the substring in s; for example, if s = "AUGCUUCAGAAAGGUCUUACG", then s[2:5] = "UGCU".
+
+        The location of a substring s[j:k] is its beginning position j; note that t will have multiple 
+        locations in s if it occurs more than once as a substring of s (see the Sample below).
+
+    >>> Example:
+            Given: Two DNA strings s and t (each of length at most 1 kbp).
+            Return: All locations of t as a substring of s.
+
+            Sample Dataset (Function parameters)
+            
+            parameter dna_string1: GATATATGCATATACTT
+            parameter dna_string2: ATAT
+
+            Sample Output (function return value)
+            2 4 10
+
+    >>> Explanation:
+            ATAT can be found at index 2 4 10 (Add 1 to the position to account for index starting at 0)
+
+        index   0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+        dna     G A T A T A T G C A T  A  T  A  C  T  T
+
+    >>> Implementation:
+        Create a function get_most_likely_ancestor_consensus with two string parameters dna_string1 and 
+        dna_string2 that returns the beginning position of occurrences of dna_string2 in dna_string1 as 
+        multiple Python parameters (not a string or list)
+
+    >>> Tests:
+        Test that the function get_most_likely_ancestor_consenus with parameters GATATATGCATATACTT and 
+        ATAT returns the multiple parameters 2 4 10 (save each value to a variable).
+
+    Main:
+        1. The program continues until the user opts out.
+        2. Prompt the user for a DNA string greater than 8 characters but less than or equal to 16.
+        3. Prompt the user for a DNA substring of exactly 4 characters.
+        4. Validate both values, the program will not continue until the validation passes for both strings.
+        5. Call the get_most_likely_ancestor_consensus function with the user-provided values.
+        6. Display the result to screen.
